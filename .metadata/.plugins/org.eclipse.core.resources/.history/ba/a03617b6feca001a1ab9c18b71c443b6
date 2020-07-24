@@ -1,0 +1,12 @@
+package com.codingsimplidfied;
+
+public class Test{
+	
+	public static void main(String[] args) {
+		
+		
+		int[] arr = {23, 2, 4, 6, 7}; 
+		
+		System.out.println(solve(arr));
+	}
+}

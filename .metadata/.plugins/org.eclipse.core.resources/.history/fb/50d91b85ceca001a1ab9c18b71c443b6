@@ -1,0 +1,24 @@
+package com.codingsimplidfied.circular_sort_pattern;
+
+public class _1_First_Missing_Positive {
+	
+	 public static void main(String[] args) {
+		
+		 
+		 int[] arr = {};
+		 
+		 System.out.println(solve(arr));
+		 
+	}
+
+	private static int solve(int[] arr) {
+		
+		
+		int i = 0, n = arr.length;
+		
+		
+		
+		
+	}
+
+}

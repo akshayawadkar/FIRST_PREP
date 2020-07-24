@@ -1,0 +1,32 @@
+package com.codingsimplidfied;
+
+import java.util.Arrays;
+
+public class _20_MergeSort {
+	
+	
+	private static void mergeSort(int[] arr, int start, int end) {
+		 
+		if(start < end) {
+			int mid = (start) + (end - start) / 2;
+			mergeSort(arr, start, mid);
+			mergeSort(arr, mid + 1, end);
+			merge(arr, start, mid, end);
+		}
+		
+	}
+
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {5, 12, 3, 1, 4, 0};
+		
+		System.out.println(Arrays.toString(arr));
+		mergeSort(arr, 0, arr.length - 1);
+		System.out.println(Arrays.toString(arr));
+		
+		
+	}
+
+	
+}

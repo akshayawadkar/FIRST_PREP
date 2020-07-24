@@ -1,0 +1,10 @@
+package com.codingsimplidfied.circular_sort_pattern;
+
+public class _1_First_Missing_Positive {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

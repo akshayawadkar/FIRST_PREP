@@ -1,0 +1,17 @@
+package com.codingsimplidfied.circular_sort_pattern;
+
+import java.util.Arrays;
+
+public class CyclicSort {
+
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {13, 14, 16, 12, 11, 15};
+		System.out.println(Arrays.toString(arr));
+		solve(arr);
+		System.out.println(Arrays.toString(arr));
+		
+		
+	}
+}

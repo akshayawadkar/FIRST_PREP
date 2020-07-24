@@ -1,0 +1,16 @@
+package com.codingsimplidfied;
+
+public class Test{
+	
+	public static void main(String[] args) {
+		
+		helloMessage("Siddi");
+				
+	}
+
+	private static void helloMessage(String name) {
+		
+		System.out.println("Hello "+name);
+	} 
+
+}

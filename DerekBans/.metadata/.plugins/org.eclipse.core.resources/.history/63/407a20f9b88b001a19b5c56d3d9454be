@@ -1,0 +1,17 @@
+
+public class WorkWithAnimals {
+
+	public static void main(String[] args) {
+		
+		Animal doggy = new Dog();
+		Animal kitty = new Cat();
+		
+		System.out.println(doggy.getSound());
+		System.out.println(kitty.getSound());
+		
+		Animal[] animals = new Animal[4];
+		animals[0] = doggy;
+		animals[1] = kitty;
+		
+	}
+}

@@ -1,0 +1,25 @@
+package com.codingsimplidfied;
+
+import java.util.*;
+
+public class Test{
+	
+	public static void main(String[] args) {
+		
+		
+		int[] arr = {23, 2, 4, 6, 7}; 
+		
+		System.out.println(solve(arr));
+	}
+
+	private static int solve(int[] arr) {
+		
+		Map<Integer, Integer> map = new HashMap<>();
+		map.put(0, -1);
+		
+		
+		
+		
+		
+	}
+}

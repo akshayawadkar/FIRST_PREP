@@ -1,0 +1,36 @@
+package com.codingsimplidfied.circular_sort_pattern;
+
+import java.util.Arrays;
+
+public class CyclicSort {
+
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {13, 14, 16, 12, 11, 15};
+		System.out.println(Arrays.toString(arr));
+		solve(arr);
+		System.out.println(Arrays.toString(arr));
+		
+		
+	}
+
+	private static void solve(int[] arr) {
+		 
+		int i = 0, n = arr.length;
+		
+		int max = Integer.MIN_VALUE;
+		for(i : arr) {
+			max = Math.max(max, arr[i]);
+		}
+		
+		while(i < n) {
+			if() {
+				
+			}else {
+				
+			}
+		}
+		
+	}
+}

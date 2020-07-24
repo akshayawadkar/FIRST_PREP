@@ -1,0 +1,23 @@
+package com.codingsimplidfied;
+
+public class CycleInArray {
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {1, 1, 2, 1, 2};
+		
+		System.out.println(hasCycle(arr));
+		
+	}
+
+	private static boolean hasCycle(int[] arr) {
+		
+		if(arr.length <= 1) {
+			return false;
+		}
+		
+		
+		
+	}
+
+}

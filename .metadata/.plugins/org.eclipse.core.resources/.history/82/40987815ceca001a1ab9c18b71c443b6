@@ -1,0 +1,40 @@
+package com.codingsimplidfied.circular_sort_pattern;
+
+public class _1_First_Missing_Positive {
+	
+	public static void main(String[] args) {
+		
+		int[] arr =  {7, 8, 9, 11, 12};
+		System.out.println(solve(arr));
+		
+	}
+
+	private static int solve(int[] nums) {
+		
+		int i = 0, n = nums.length;
+		
+		while(i < n) {
+			if(nums[i] > 0 && nums[i] <= n && nums[i] != nums[nums[i] - 1]) {
+				swap(nums, i, nums[i] - 1);
+			}else {
+				i++;
+			}
+		}
+		
+		for(i = 0; i < n; i++) {
+			if(nums[i] != i +1 ) {
+				return i + 1;
+			}
+		}
+		
+		return n + 1;
+	}
+
+	private static void swap(int[] nums, int i, int j) {
+		
+		int tmp = nums[i];
+		nums[i] = nums[j];
+		nums[j] = tmp;
+	}
+
+}

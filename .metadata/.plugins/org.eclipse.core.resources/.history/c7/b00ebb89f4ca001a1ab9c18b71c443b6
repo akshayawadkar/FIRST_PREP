@@ -1,0 +1,32 @@
+package com.codingsimplidfied;
+
+public class _53_MaxSubArray_Kadanes_Algo {
+	
+	
+	 public int maxSubArray(int[] nums) {
+	        
+	        int maxTillHere = nums[0];
+	        int maxTillNow = 0;
+	        
+	        for(int i = 0; i < nums.length; i++){
+	            maxTillNow += nums[i];
+	            if(maxTillHere < maxTillNow){
+	                maxTillHere = maxTillNow;
+	            }
+	            
+	            if(maxTillNow < 0){
+	                maxTillNow = 0;
+	            }
+	        }
+	        
+	        return maxTillHere;
+	    }
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

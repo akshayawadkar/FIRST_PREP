@@ -1,0 +1,22 @@
+package com.codingsimplidfied;
+
+public class Test{
+	
+	public static void main(String[] args) {
+		
+		System.out.println(base62("siddi"));
+				
+	}
+
+	public static String base62(int no) {
+		String  alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		StringBuilder sb = new StringBuilder();
+		
+		while(no >  0) {
+			sb.append(alpha.charAt(no % 60));
+			no /= 62;
+		}
+		
+		return sb.toString();
+	}
+}

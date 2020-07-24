@@ -1,0 +1,18 @@
+package com.codingsimplidfied;
+
+import java.util.Arrays;
+
+public class _20_MergeSort {
+
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {5, 12, 3, 1, 4, 0};
+		
+		System.out.println(Arrays.toString(arr));
+		mergeSort(arr, 0, arr.length - 1);
+		System.out.println(Arrays.toString(arr));
+		
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;AmazonLocker&apos;&#x0A;- Original project: &apos;AmazonLocker&apos;&#x0A;- Original elements:&#x0A;     Address.java&#x0A;     AmazonLocker.java&#x0A;     Locker.java&#x0A;     LockerManager.java&#x0A;     LockerType.java" description="Delete elements" element1="/src&lt;{Locker.java" element2="/src&lt;{LockerType.java" element3="/src&lt;{LockerManager.java" element4="/src&lt;{AmazonLocker.java" element5="/src&lt;{Address.java" elements="5" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1591230872101" subPackages="false" version="1.0"/>
+</session>

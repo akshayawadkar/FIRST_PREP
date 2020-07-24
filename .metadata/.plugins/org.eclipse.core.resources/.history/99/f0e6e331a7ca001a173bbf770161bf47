@@ -1,0 +1,41 @@
+package com.codingsimplidfied;
+
+import java.util.Arrays;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		
+		int[] arr = {5, 12, 3, 1, 4, 8};
+		
+		System.out.println(Arrays.toString(arr));
+		solve(arr, arr.length - 1);
+		System.out.println(Arrays.toString(arr));
+		
+	}
+
+	private static void solve(int[] arr, int k) {
+	 
+		int writeIndex = 0;
+		int pivot = arr[k];
+		
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i] < pivot) {
+				swap(arr, writeIndex++, i);
+			}
+		}
+		
+//		System.out.println(writeIndex + " " + arr[writeIndex] );
+		
+		swap(arr, writeIndex, k);
+		
+	}
+
+	private static void swap(int[] arr, int i, int j) { 
+		int tmp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = tmp; 
+	}
+
+}

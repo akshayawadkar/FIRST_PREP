@@ -1,0 +1,53 @@
+package com.codingsimplidfied;
+
+public class CycleInArray {
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {1, 1, 2, 1, 2};
+		
+		System.out.println(hasCycle(arr));
+		
+	}
+
+	private static boolean hasCycle(int[] arr) {
+		
+		if(arr.length <= 1) {
+			return false;
+		}
+		
+		for(int i = 0; i < arr.length; i++) {
+			
+			int slow = i, fast = i;
+			
+			boolean isForward = arr[i] > 0;
+			
+			slow = getNext();
+			
+			if(slow == -1) {
+				break;
+			}
+			
+			fast = getNext();
+			
+			if(fast == -1) {
+				break;
+			}
+			
+			fast = getNext();
+			
+			if(fast == -1) {
+				break;
+			}
+			
+			if(slow == fast) {
+				return true;
+			}
+			
+			
+		}
+	
+		return false;
+	}
+
+}

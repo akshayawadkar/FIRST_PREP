@@ -1,0 +1,24 @@
+package com.codingsimplidfied;
+
+public class Test{
+	
+	public static void main(String[] args) {
+		
+		
+		System.out.println("siddi".hashCode());
+		
+		
+//		System.out.println(base62("siddi"));
+				
+	}
+ 
+}
+
+//A-Z 26
+//a-z 26
+//0-9 10
+//_____
+//62
+
+
+
